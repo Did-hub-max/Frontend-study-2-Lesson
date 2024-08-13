@@ -1,0 +1,232 @@
+/* Обнуление отступов и размеров по умолчанию */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Удаление списочных маркеров и выравнивание списка */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Удаление подчеркивания ссылок и установка цвета */
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+/* Сброс стилей для изображений */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Убираем лишний скролл и применяем глобальный бекграунд */
+html,
+body {
+  background-color: #121214;
+}
+
+/* Установка базового шрифта */
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+/* Обнуление стилей кнопок и инпутов */
+button,
+input,
+textarea {
+  font: inherit;
+  border: none;
+  background: none;
+  outline: none;
+  color: #ffffff;
+}
+
+button {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.header__nav-list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header__nav-controls {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header__nav-btn--signup {
+  padding: 8px 20px;
+  background-color: #ffffff;
+  border-radius: 32px;
+  color: #000000;
+}
+
+.banner {
+  background-color: #0033ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.banner__text {
+  margin-right: 16px;
+}
+
+.hero {
+  position: relative;
+  z-index: 1;
+  padding-top: 140px;
+  padding-bottom: 16px;
+}
+
+.hero__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.hero__title {
+  max-width: 513px;
+  font-size: 72px;
+  line-height: 72px;
+  font-weight: 400;
+}
+
+.hero__subtitle {
+  margin-top: 26px;
+  margin-bottom: 44px;
+  max-width: 412px;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.hero__btn {
+  padding: 16px 32px;
+  background-color: #0033ff;
+  border-radius: 8px;
+  color: #ffffff;
+  margin-bottom: 150px;
+}
+
+.hero__more {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+}
+
+.hero__more:hover .hero__more-icon {
+  transform: translateY(-4px);
+}
+
+.hero__more-icon {
+  transition: transform 0.3s ease;
+}
+
+/* -------------MY STYLE------------------- */
+.blue__btn {
+  color: #fff;
+  text-align: center;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  border-radius: 8px;
+  background: #03f;
+  padding: 5px 20px;
+}
+h2 {
+  color: #fff;
+  font-family: Roboto, sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px; /* 128.571% */
+}
+h6 {
+  color: #a6a8ad;
+
+  font-family: Roboto, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px; /* 116.667% */
+  letter-spacing: 0.12px;
+  text-transform: uppercase;
+}
+p {
+  color: #fff;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+.flex__case {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 96px 0 0 0;
+}
+.flex__case img{
+  width: 100%;
+  height: auto;
+}
+.flex__case h6 {
+  margin-bottom: 5px;
+}
+.flex__case h2 {
+  margin-bottom: 12px;
+}
+.flex__case p {
+  margin-bottom: 18px;
+}
+.conected__body{
+  flex-direction: row-reverse;
+  
+}
+.conected__info{
+  text-align: right;
+  
+}
