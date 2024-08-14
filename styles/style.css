@@ -163,45 +163,86 @@ button:hover {
   transition: transform 0.3s ease;
 }
 
-/* -------------MY STYLE------------------- */
+/* -------------MY STYLE #2 Lesson ------------------- */
 .blue__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #fff;
-  text-align: center;
-  font-family: Roboto, sans-serif;
+
   font-size: 16px;
-  font-style: normal;
+
   font-weight: 400;
-  line-height: 24px; /* 150% */
+
   border-radius: 8px;
   background: #03f;
   padding: 5px 20px;
+  width: fit-content;
 }
-h2 {
+.sound__subtitle,
+.conected__subtitle,
+.gear__subtitle,
+.technology__subtitle {
   color: #fff;
-  font-family: Roboto, sans-serif;
+
   font-size: 28px;
-  font-style: normal;
+
   font-weight: 400;
-  line-height: 36px; /* 128.571% */
 }
-h6 {
+.sound__title,
+.conected__title,
+.gear__title,
+.technology__title {
   color: #a6a8ad;
 
-  font-family: Roboto, sans-serif;
   font-size: 12px;
-  font-style: normal;
+
   font-weight: 400;
-  line-height: 14px; /* 116.667% */
+
   letter-spacing: 0.12px;
   text-transform: uppercase;
 }
-p {
+.technology__text {
   color: #fff;
-  font-family: Roboto, sans-serif;
+
   font-size: 16px;
-  font-style: normal;
+
   font-weight: 400;
-  line-height: 24px; /* 150% */
+  max-width: 441px;
+}
+.gear__text {
+  color: #fff;
+
+  font-size: 16px;
+
+  font-weight: 400;
+  max-width: 424px;
+}
+.conected__text {
+  color: #fff;
+
+  font-size: 16px;
+
+  font-weight: 400;
+  max-width: 422px;
+  text-align: right;
+}
+.sound__text {
+  color: #fff;
+
+  font-size: 16px;
+
+  font-weight: 400;
+  max-width: 374px;
+}
+.gear__img {
+  max-width: 580px;
+}
+.conected__img {
+  max-width: 579px;
+}
+.technology__img {
+  max-width: 579px;
 }
 .flex__case {
   display: flex;
@@ -209,24 +250,64 @@ p {
   align-items: center;
   padding: 96px 0 0 0;
 }
-.flex__case img{
+.flex__case-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.flex__case img {
   width: 100%;
   height: auto;
 }
-.flex__case h6 {
-  margin-bottom: 5px;
-}
-.flex__case h2 {
-  margin-bottom: 12px;
-}
-.flex__case p {
-  margin-bottom: 18px;
-}
-.conected__body{
+
+.conected__body,
+.technology__body {
   flex-direction: row-reverse;
-  
 }
-.conected__info{
-  text-align: right;
-  
+.conected__info,
+.technology__info {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+/* -------------MY STYLE #3 Lesson ------------------- */
+.creators {
+  padding: 120px 0;
+}
+.creators__title {
+  color: #fff;
+
+  font-size: 28px;
+
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+.creators__case {
+  gap: 10px;
+  padding: 0;
+}
+.creators__card {
+  border-radius: 8px;
+  background: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px;
+}
+.card__img {
+  max-width: 223px;
+  margin-bottom: 30px;
+}
+.creators__text {
+  color: #000;
+  font-size: 20px;
+  line-height: 25px; /* 125% */
+  letter-spacing: 0.3px;
+  margin-bottom: 16px;
+}
+.creators__name {
+  color: #767676;
+  font-size: 14px;
+  line-height: 20px; /* 142.857% */
 }
