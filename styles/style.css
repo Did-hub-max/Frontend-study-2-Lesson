@@ -311,3 +311,48 @@ button:hover {
   font-size: 14px;
   line-height: 20px; /* 142.857% */
 }
+
+/* -------------MY STYLE #4 Lesson ------------------- */
+
+.splice {
+  background: url("../assets/img/splice__bg.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  min-height: 728px;
+}
+.splice__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 57px;
+}
+.splice__title {
+  color: #fff;
+  font-size: 54px;
+}
+.footer__body{
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 50px 0 60px 0;
+}
+.footer__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__nav-list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer__nav-controls {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
