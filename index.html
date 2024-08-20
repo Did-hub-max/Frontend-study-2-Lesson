@@ -14,10 +14,12 @@
 <body>
   <header class="header">
     <nav class="header__nav">
-      <a href="#" class="header__nav-link header__nav-link--logo">
-        <img src="./assets/img/logo.png" alt="logo" class="header__nav-logo">
-      </a>
-      <ul class="header__nav-list">
+      <ul class="header__nav-list header__flex-gap">
+        <li class="header__nav-item">
+          <a href="#" class="header__nav-link header__nav-link--logo">
+            <img src="./assets/img/logo.png" alt="logo" class="header__nav-logo">
+          </a>
+        </li>
         <li class="header__nav-item">
           <a href="#" class="header__nav-link">Sounds</a>
         </li>
@@ -40,17 +42,17 @@
           <a href="#" class="header__nav-link">Pricing</a>
         </li>
       </ul>
-      <div class="header__nav-controls">
+
+      <div class="header__nav-controls header__flex-gap">
         <button class="header__nav-btn header__nav-btn--login">Login</button>
         <button class="header__nav-btn header__nav-btn--signup">Sign up</button>
       </div>
-      <div class="header-burger" id="header-burger">
-        <div class="burger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
+
+      <img
+        src="./assets/img/burger.svg"
+        alt="burger"
+        class="header__mobile-burger"
+      >
     </nav>
   </header>
 
@@ -69,7 +71,6 @@
         alt="hero-background"
         class="hero__background"
       >
-      
 
       <div class="container">
         <h1 class="hero__title">Step into the producer’s playground</h1>
@@ -94,15 +95,15 @@
       </div>
     </section>
 
-    <section class="sounds container">
-      <div class="sounds__text-content">
-        <p class="sounds__label">SOUNDS</p>
+    <section class="sounds container flex__padding_case">
+      <div class="sounds__text-content case__text_left">
+        <p class="sounds__label case__label">SOUNDS</p>
 
-        <h2 class="sounds__title">A catalog so deep, it’s dangerous.</h2>
+        <h2 class="sounds__title case__title">A catalog so deep, it’s dangerous.</h2>
 
-        <p class="sounds__subtitle">Expertly created and curated samples in any style imaginable. Start swimming in sound.</p>
+        <p class="sounds__subtitle case__subtitle">Expertly created and curated samples in any style imaginable. Start swimming in sound.</p>
 
-        <button class="sounds__btn">
+        <button class="sounds__btn btn__blue">
           Explore sounds
         </button>
       </div>
@@ -111,36 +112,36 @@
         src="./assets/img/sounds.png"
         alt="sounds"
         loading="lazy"
-        class="sounds__img"
+        class="sounds__img case__img"
       />
     </section>
 
-    <section class="connectedExperience container">
+    <section class="connectedExperience container flex__padding_case">
       <img
         src="./assets/img/connected-experience.png"
         alt="connected-experience"
         loading="lazy"
-        class="connectedExperience__img"
+        class="connectedExperience__img case__img"
       />
 
-      <div class="connectedExperience__text-content">
-        <p class="connectedExperience__label">Connected Experience</p>
+      <div class="connectedExperience__text-content case__text_right">
+        <p class="connectedExperience__label case__label">Connected Experience</p>
 
-        <h2 class="connectedExperience__title">A workflow that actually flows.</h2>
+        <h2 class="connectedExperience__title case__title">A workflow that actually flows.</h2>
 
-        <p class="connectedExperience__subtitle">Preview samples in your track’s key and tempo, drag and drop sounds into your DAW, and organize your favorite samples, MIDI and presets in one place.</p>
+        <p class="connectedExperience__subtitle case__subtitle">Preview samples in your track’s key and tempo, drag and drop sounds into your DAW, and organize your favorite samples, MIDI and presets in one place.</p>
       </div>
     </section>
 
-    <section class="gear container">
-      <div class="gear__text-content">
-        <p class="gear__label">Gear</p>
+    <section class="gear container flex__padding_case">
+      <div class="gear__text-content case__text_left">
+        <p class="gear__label case__label">Gear</p>
 
-        <h2 class="gear__title">Build a drool-worthy studio, affordably.</h2>
+        <h2 class="gear__title case__title">Build a drool-worthy studio, affordably.</h2>
 
-        <p class="gear__subtitle">The industry’s top software, all in one place, on payment plans built to work for you.</p>
+        <p class="gear__subtitle case__subtitle">The industry’s top software, all in one place, on payment plans built to work for you.</p>
 
-        <button class="gear__btn">
+        <button class="gear__btn btn__blue">
           Explore Gear
         </button>
       </div>
@@ -149,24 +150,24 @@
         src="./assets/img/gear.png"
         alt="gear"
         loading="lazy"
-        class="gear__img"
+        class="gear__img case__img"
       />
     </section>
 
-    <section class="technology container">
+    <section class="technology container flex__padding_case">
       <img
         src="./assets/img/technology.png"
         alt="technology"
         loading="lazy"
-        class="technology__img"
+        class="technology__img case__img"
       />
 
-      <div class="technology__text-content">
-        <p class="technology__label">Technology</p>
+      <div class="technology__text-content case__text_right">
+        <p class="technology__label case__label">Technology</p>
 
-        <h2 class="technology__title">Crate dig without the dust.</h2>
+        <h2 class="technology__title case__title">Crate dig without the dust.</h2>
 
-        <p class="technology__subtitle">Our intelligent search tools help you discover sounds you would normally have to dig to find. Tech breaks the sweat, not you.</p>
+        <p class="technology__subtitle case__subtitle">Our intelligent search tools help you discover sounds you would normally have to dig to find. Tech breaks the sweat, not you.</p>
 
         <button class="technology__btn">
           Discover CoSo
@@ -175,7 +176,7 @@
     </section>
 
     <section class="cards container">
-      <h2 class="cards__title">
+      <h2 class="cards__title case__title">
         What creators are saying about Splice
       </h2>
 
@@ -284,6 +285,5 @@
       </li>
     </ul>
   </footer>
-  <script src="js/script.js"></script>
 </body>
 </html>

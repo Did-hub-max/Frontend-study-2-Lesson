@@ -15,7 +15,7 @@ ol {
 a {
   text-decoration: none;
   color: inherit;
-  transition: all 0.3s ease;
+  transition: all .3s ease;
 }
 
 a:hover {
@@ -37,10 +37,10 @@ body {
 
 /* Установка базового шрифта */
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   line-height: 1.5;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 /* Обнуление стилей кнопок и инпутов */
@@ -51,12 +51,12 @@ textarea {
   border: none;
   background: none;
   outline: none;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 button {
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all .3s ease;
 }
 
 button:hover {
@@ -75,8 +75,12 @@ button:hover {
   justify-content: space-between;
   padding: 20px;
 }
-
-.header__nav-list {
+.header__flex-gap{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+/* .header__nav-list {
   display: flex;
   align-items: center;
   gap: 20px;
@@ -86,17 +90,21 @@ button:hover {
   display: flex;
   align-items: center;
   gap: 20px;
+} */
+
+.header__mobile-burger {
+  display: none;
 }
 
 .header__nav-btn--signup {
   padding: 8px 20px;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   border-radius: 32px;
   color: #000000;
 }
 
 .banner {
-  background-color: #0033ff;
+  background-color: #0033FF;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -140,9 +148,9 @@ button:hover {
 
 .hero__btn {
   padding: 16px 32px;
-  background-color: #0033ff;
+  background-color: #0033FF;
   border-radius: 8px;
-  color: #ffffff;
+  color: #FFFFFF;
   margin-bottom: 150px;
 }
 
@@ -162,147 +170,179 @@ button:hover {
 .hero__more-icon {
   transition: transform 0.3s ease;
 }
-
-.sounds {
+.flex__padding_case{
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 96px;
 }
-
-.sounds__text-content {
+/* .sounds {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 96px;
+} */
+.case__text_left{
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
-
-.sounds__label {
+/* .sounds__text-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+} */
+.case__label{
   font-size: 12px;
   text-transform: uppercase;
   line-height: 14px;
-  color: #a6a8ad;
+  color: #A6A8AD;
 }
+/* .sounds__label {
+  font-size: 12px;
+  text-transform: uppercase;
+  line-height: 14px;
+  color: #A6A8AD;
+} */
 
-.sounds__title {
+/* .sounds__title {
   font-size: 28px;
   line-height: 36px;
   font-weight: 400;
-}
-
-.sounds__subtitle {
-  max-width: 422px;
+} */
+.case__subtitle{
   font-size: 16px;
   line-height: 24px;
 }
-
-.sounds__btn {
-  padding: 8px 20px;
-  background-color: #0033ff;
-  border-radius: 8px;
-  width: fit-content;
+.sounds__subtitle {
+  max-width: 422px;
+  /* font-size: 16px;
+  line-height: 24px; */
 }
 
-.sounds__img {
+/* .sounds__btn {
+  padding: 8px 20px;
+  background-color: #0033FF;
+  border-radius: 8px;
+  width: fit-content;
+} */
+.case__img{
   width: 100%;
   max-width: 580px;
 }
+/* .sounds__img {
+  width: 100%;
+  max-width: 580px;
+} */
 
-.connectedExperience {
+/* .connectedExperience {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 96px;
-}
-
-.connectedExperience__text-content {
+} */
+.case__text_right{
   display: flex;
   flex-direction: column;
   align-items: end;
   gap: 16px;
 }
+/* .connectedExperience__text-content {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 16px;
+} */
 
-.connectedExperience__label {
+/* .connectedExperience__label {
   font-size: 12px;
   text-transform: uppercase;
   line-height: 14px;
-  color: #a6a8ad;
-}
+  color: #A6A8AD;
+} */
 
-.connectedExperience__title {
+/* .connectedExperience__title {
   font-size: 28px;
   line-height: 36px;
   font-weight: 400;
-}
+} */
 
 .connectedExperience__subtitle {
   text-align: end;
   max-width: 422px;
-  font-size: 16px;
-  line-height: 24px;
+  /* font-size: 16px;
+  line-height: 24px; */
 }
-
-.connectedExperience__btn {
+.btn__blue{
   padding: 8px 20px;
-  background-color: #0033ff;
+  background-color: #0033FF;
   border-radius: 8px;
   width: fit-content;
 }
+/* 
+ЦЕЙ КЛАС НЕ ВИКОРИСТОВУЄТЬСЯ НА СТОРІНЦІ
+.connectedExperience__btn {
+  padding: 8px 20px;
+  background-color: #0033FF;
+  border-radius: 8px;
+  width: fit-content;
+} */
 
-.connectedExperience__img {
+/* .connectedExperience__img {
   width: 100%;
   max-width: 580px;
-}
+} */
 
-.gear {
+/* .gear {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 96px;
-}
+} */
 
-.gear__text-content {
+/* .gear__text-content {
   display: flex;
   flex-direction: column;
   gap: 16px;
-}
+} */
 
-.gear__label {
+/* .gear__label {
   font-size: 12px;
   text-transform: uppercase;
   line-height: 14px;
-  color: #a6a8ad;
-}
+  color: #A6A8AD;
+} */
 
-.gear__title {
+/* .gear__title {
   font-size: 28px;
   line-height: 36px;
   font-weight: 400;
-}
+} */
 
 .gear__subtitle {
   max-width: 422px;
-  font-size: 16px;
-  line-height: 24px;
+  /* font-size: 16px;
+  line-height: 24px; */
 }
 
-.gear__btn {
+/* .gear__btn {
   padding: 8px 20px;
-  background-color: #0033ff;
+  background-color: #0033FF;
   border-radius: 8px;
   width: fit-content;
-}
+} */
 
-.gear__img {
+/* .gear__img {
   width: 100%;
   max-width: 580px;
-}
+} */
 
-.technology {
+/* .technology {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 96px;
-}
+} */
 
 .technology__text-content {
   display: flex;
@@ -311,37 +351,37 @@ button:hover {
   gap: 16px;
 }
 
-.technology__label {
+/* .technology__label {
   font-size: 12px;
   text-transform: uppercase;
   line-height: 14px;
-  color: #a6a8ad;
-}
+  color: #A6A8AD;
+} */
 
-.technology__title {
+/* .technology__title {
   font-size: 28px;
   line-height: 36px;
   font-weight: 400;
-}
+} */
 
 .technology__subtitle {
   text-align: end;
   max-width: 442px;
-  font-size: 16px;
-  line-height: 24px;
+  /* font-size: 16px;
+  line-height: 24px; */
 }
 
-.technology__btn {
+/* .technology__btn {
   padding: 8px 20px;
-  background-color: #0033ff;
+  background-color: #0033FF;
   border-radius: 8px;
   width: fit-content;
-}
+} */
 
-.technology__img {
+/* .technology__img {
   width: 100%;
   max-width: 580px;
-}
+} */
 
 .cards {
   display: flex;
@@ -349,12 +389,16 @@ button:hover {
   gap: 24px;
   margin-bottom: 120px;
 }
-
-.cards__title {
+.case__title{
   font-size: 28px;
   line-height: 36px;
   font-weight: 400;
 }
+/* .cards__title {
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 400;
+} */
 
 .cards__content {
   display: flex;
@@ -363,7 +407,7 @@ button:hover {
 
 .card {
   padding: 32px;
-  background-color: #f8f8f8;
+  background-color: #F8F8F8;
   border-radius: 8px;
 }
 
@@ -417,7 +461,7 @@ button:hover {
 .hero-footer__btn {
   padding: 8px 20px;
   border-radius: 8px;
-  background-color: #0033ff;
+  background-color: #0033FF;
 }
 
 .footer {
@@ -431,65 +475,19 @@ button:hover {
 }
 
 .footer__rights {
-  color: #a6a8ad;
+  color: #A6A8AD
 }
 
 .footer__link-item {
-  color: #a6a8ad;
-}
-
-/* -----------------My code Lesson 5---------------- */
-
-.header__nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
-  position: relative;
-}
-
-.header__nav-btn--signup {
-  padding: 8px 20px;
-  background-color: #ffffff;
-  border-radius: 32px;
-  color: #000000;
-}
-
-.header-burger {
-  display: none;
-  cursor: pointer;
-  position: absolute;
-  right: 20px;
-}
-
-.header-burger .burger span {
-  display: block;
-  width: 20px;
-  height: 2px;
-  margin-bottom: 3px;
-  background-color: #ffffff;
-  transition: 0.3s;
+  color: #A6A8AD;
 }
 
 @media (max-width: 768px) {
-  .header__nav-list {
+  .header__nav-item {
     display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: #000000;
-    padding: 20px;
-    gap: 15px;
-    z-index: 999;
   }
 
-  .header__nav.active .header__nav-list {
-    display: flex;
-  }
-
-  .header-burger {
+  .header__nav-item:first-child {
     display: block;
   }
 
@@ -497,98 +495,142 @@ button:hover {
     display: none;
   }
 
-  .header-burger.active .burger span:nth-child(1) {
-    transform: rotate(45deg) translateY(8px);
+  .header__mobile-burger {
+    display: block;
   }
 
-  .header-burger.active .burger span:nth-child(2) {
-    opacity: 0;
-  }
-
-  .header-burger.active .burger span:nth-child(3) {
-    transform: rotate(-45deg) translateY(-8px);
-  }
   .banner {
-    padding: 11px 20px 16px 20px;
+    padding: 10px 16px;
   }
-  .banner__text {
-    max-width: 289px;
-  }
-  .hero{
-    padding: 40px 0 ;
-  }
-  .hero__title {
-    font-size: 48px;
 
-    line-height: 48px; /* 100% */
-    letter-spacing: 1.08px;
+  .banner__btn {
+    white-space: nowrap;
   }
-  .hero__subtitle {
-    font-size: 20px;
 
-    line-height: 24px; /* 120% */
-  }
-  .hero__btn{
-    margin-bottom: 0px;
-  }
-  .hero__more{
-    display: none;
-  }
   .sounds {
     flex-direction: column-reverse;
-    
   }
-  .sounds__text-content{
-    margin-top: 51px;
-    align-items: center;
-    text-align: center;
-  }
-  .connectedExperience {
-    flex-direction: column;
-    
-  }
-  .connectedExperience__text-content{
-    margin-top: 58px;
-    align-items: center;
-    text-align: center;
-  }
-  .connectedExperience__subtitle{
-    text-align: center;
-  }
-  .gear {
-    flex-direction: column-reverse;
-    
-  }
-  .gear__text-content{
+
+  .sounds__text-content {
     margin-top: 44px;
     align-items: center;
+  }
+
+  .sounds__title {
     text-align: center;
   }
+
+  .sounds__subtitle {
+    text-align: center;
+  }
+
+  .connectedExperience {
+    flex-direction: column;
+  }
+
+  .connectedExperience__text-content {
+    margin-top: 44px;
+    align-items: center;
+  }
+
+  .connectedExperience__title {
+    text-align: center;
+  }
+
+  .connectedExperience__subtitle {
+    text-align: center;
+  }
+
+  .gear {
+    flex-direction: column-reverse;
+  }
+
+  .gear__text-content {
+    margin-top: 44px;
+    align-items: center;
+  }
+
+  .gear__title {
+    text-align: center;
+  }
+
+  .gear__subtitle {
+    text-align: center;
+  }
+
   .technology {
     flex-direction: column;
-    
   }
-  .technology__text-content{
-    margin-top: 17px;
+
+  .technology__text-content {
+    margin-top: 44px;
     align-items: center;
-    
   }
-  .technology__subtitle{
+
+  .technology__title {
     text-align: center;
   }
-  .cards__title{
-    max-width: 367px;
-    margin: 0 auto;
+
+  .technology__subtitle {
     text-align: center;
   }
-  .cards__content{
+
+  .cards {
+    margin-bottom: 48px;
+  }
+
+  .cards__title {
+    text-align: center;
+  }
+
+  .cards__content {
     flex-direction: column;
+    gap: 16px;
   }
-  .hero-footer{
-    padding: 109px 0;
-  }
+
   .footer__list {
-    flex-direction: column-reverse;
     align-items: center;
+    flex-direction: column-reverse;
   }
 }
+
+@media (max-width: 500px) {
+  .hero {
+    padding: 48px 0;
+  }
+
+  .hero__title {
+    font-size: 48px;
+    line-height: 48px;
+  }
+
+  .hero__subtitle {
+    max-width: 345px;
+  }
+
+  .hero__btn {
+    margin-bottom: 0;
+  }
+
+  .hero__more {
+    display: none;
+  }
+
+  .hero-footer {
+    padding: 108px 0;
+  }
+
+  .hero-footer__title {
+    font-size: 44px;
+    line-height: 40px;
+  }
+}
+
+
+/* МОЖНА ЩЕ ЗРОБИТИ СПЫЛЬНИЙ КЛАС ДЛЯ БЛОКІВ, ЯКІ ПОВИННІ БУТИ НА 
+  ДЕКСТОПІ, ТИПУ .DESKTOP, ЩОБ ПОТІМ В МОБІЛЬНІЙ ВЕРСІЇ ЗРОБИТИ ПРОСТО
+  DESKTOP{
+  display: none:
+  }
+  І АНАЛОГІЧНО ДЛЯ МОБІЛЬНОЇ
+*/
