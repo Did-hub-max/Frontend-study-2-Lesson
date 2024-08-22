@@ -8,61 +8,18 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <script src="js/builder.js"></script>
   <title>Splice</title>
   <meta name="description" content="Splice content">
 </head>
 <body>
   <header class="header">
-    <nav class="header__nav">
-      <ul class="header__nav-list header__flex-gap">
-        <li class="header__nav-item">
-          <a href="#" class="header__nav-link header__nav-link--logo">
-            <img src="./assets/img/logo.png" alt="logo" class="header__nav-logo">
-          </a>
-        </li>
-        <li class="header__nav-item">
-          <a href="#" class="header__nav-link">Sounds</a>
-        </li>
-        <li class="header__nav-item">
-          <a href="#" class="header__nav-link">Skills</a>
-        </li>
-        <li class="header__nav-item">
-          <a href="#" class="header__nav-link">Plugins</a>
-        </li>
-        <li class="header__nav-item">
-          <a href="#" class="header__nav-link">Studio</a>
-        </li>
-        <li class="header__nav-item">
-          <a href="#" class="header__nav-link">Community</a>
-        </li>
-        <li class="header__nav-item">
-          <a href="#" class="header__nav-link">Blog</a>
-        </li>
-        <li class="header__nav-item">
-          <a href="#" class="header__nav-link">Pricing</a>
-        </li>
-      </ul>
-
-      <div class="header__nav-controls header__flex-gap">
-        <button class="header__nav-btn header__nav-btn--login">Login</button>
-        <button class="header__nav-btn header__nav-btn--signup">Sign up</button>
-      </div>
-
-      <img
-        src="./assets/img/burger.svg"
-        alt="burger"
-        class="header__mobile-burger"
-      >
-    </nav>
+    
   </header>
 
   <main class="main">
     <section class="banner">
-      <p class="banner__text">🤘 Get free Sounds when you start a trial & 4 months off a Sounds+ annual plan.</p>
-
-      <button class="banner__btn">
-        Click here
-      </button>
+      
     </section>
 
     <section class="hero">
@@ -79,7 +36,7 @@
           Explore the world’s best sample library and an unmatched marketplace of plugins and DAWs.
         </p>
 
-        <button class="hero__btn">
+        <button class="btn--primary">
           Try free
         </button>
 
@@ -95,15 +52,15 @@
       </div>
     </section>
 
-    <section class="sounds container flex__padding_case">
-      <div class="sounds__text-content case__text_left">
-        <p class="sounds__label case__label">SOUNDS</p>
+    <section class="features features--reverse container">
+      <div class="features__text-content">
+        <p class="features__label">SOUNDS</p>
 
-        <h2 class="sounds__title case__title">A catalog so deep, it’s dangerous.</h2>
+        <h2 class="features__title">A catalog so deep, it’s dangerous.</h2>
 
-        <p class="sounds__subtitle case__subtitle">Expertly created and curated samples in any style imaginable. Start swimming in sound.</p>
+        <p class="features__subtitle">Expertly created and curated samples in any style imaginable. Start swimming in sound.</p>
 
-        <button class="sounds__btn btn__blue">
+        <button class="features__btn btn--primary">
           Explore sounds
         </button>
       </div>
@@ -112,36 +69,36 @@
         src="./assets/img/sounds.png"
         alt="sounds"
         loading="lazy"
-        class="sounds__img case__img"
+        class="features__img"
       />
     </section>
 
-    <section class="connectedExperience container flex__padding_case">
+    <section class="features container">
       <img
         src="./assets/img/connected-experience.png"
         alt="connected-experience"
         loading="lazy"
-        class="connectedExperience__img case__img"
+        class="features__img"
       />
 
-      <div class="connectedExperience__text-content case__text_right">
-        <p class="connectedExperience__label case__label">Connected Experience</p>
+      <div class="features__text-content">
+        <p class="features__label">Connected Experience</p>
 
-        <h2 class="connectedExperience__title case__title">A workflow that actually flows.</h2>
+        <h2 class="features__title">A workflow that actually flows.</h2>
 
-        <p class="connectedExperience__subtitle case__subtitle">Preview samples in your track’s key and tempo, drag and drop sounds into your DAW, and organize your favorite samples, MIDI and presets in one place.</p>
+        <p class="features__subtitle">Preview samples in your track’s key and tempo, drag and drop sounds into your DAW, and organize your favorite samples, MIDI and presets in one place.</p>
       </div>
     </section>
 
-    <section class="gear container flex__padding_case">
-      <div class="gear__text-content case__text_left">
-        <p class="gear__label case__label">Gear</p>
+    <section class="features features--reverse container">
+      <div class="features__text-content">
+        <p class="features__label">Gear</p>
 
-        <h2 class="gear__title case__title">Build a drool-worthy studio, affordably.</h2>
+        <h2 class="features__title">Build a drool-worthy studio, affordably.</h2>
 
-        <p class="gear__subtitle case__subtitle">The industry’s top software, all in one place, on payment plans built to work for you.</p>
+        <p class="features__subtitle">The industry’s top software, all in one place, on payment plans built to work for you.</p>
 
-        <button class="gear__btn btn__blue">
+        <button class="features__btn btn--primary">
           Explore Gear
         </button>
       </div>
@@ -150,33 +107,33 @@
         src="./assets/img/gear.png"
         alt="gear"
         loading="lazy"
-        class="gear__img case__img"
+        class="features__img"
       />
     </section>
 
-    <section class="technology container flex__padding_case">
+    <section class="features container">
       <img
         src="./assets/img/technology.png"
         alt="technology"
         loading="lazy"
-        class="technology__img case__img"
+        class="features__img"
       />
 
-      <div class="technology__text-content case__text_right">
-        <p class="technology__label case__label">Technology</p>
+      <div class="features__text-content">
+        <p class="features__label">Technology</p>
 
-        <h2 class="technology__title case__title">Crate dig without the dust.</h2>
+        <h2 class="features__title">Crate dig without the dust.</h2>
 
-        <p class="technology__subtitle case__subtitle">Our intelligent search tools help you discover sounds you would normally have to dig to find. Tech breaks the sweat, not you.</p>
+        <p class="features__subtitle">Our intelligent search tools help you discover sounds you would normally have to dig to find. Tech breaks the sweat, not you.</p>
 
-        <button class="technology__btn">
+        <button class="features__btn btn--primary">
           Discover CoSo
         </button>
       </div>
     </section>
 
     <section class="cards container">
-      <h2 class="cards__title case__title">
+      <h2 class="cards__title">
         What creators are saying about Splice
       </h2>
 
@@ -244,46 +201,14 @@
         Try Splice today
       </h2>
 
-      <button class="hero-footer__btn">
+      <button class="btn--primary">
         Start now
       </button>
     </section>
   </main>
 
   <footer class="footer">
-    <ul class="footer__list container">
-      <li class="footer__rights">
-        © 2022 Splice.com All Rights Reserved
-      </li>
-      <li class="footer__link-item">
-        <a href="#" class="footer__link">Terms of Use</a>
-      </li>
-      <li class="footer__link-item">
-        <a href="#" class="footer__link">Privacy Policy</a>
-      </li>
-      <li class="footer__link-item">
-        <a href="#" class="footer__link">Jobs</a>
-      </li>
-      <li class="footer__link-item">
-        <a href="#" class="footer__link">Contact</a>
-      </li>
-      <li class="footer__link-item">
-        <a href="#" class="footer__link">Help</a>
-      </li>
-      <li class="footer__link-item">
-        <a
-          href="https://facebook.com"
-          target="_blank"
-          class="footer__link"
-        >
-          <img
-            src="./assets/img/facebook.png"
-            alt="facebook"
-            class="footer__social-icon"
-          >
-        </a>
-      </li>
-    </ul>
+    
   </footer>
 </body>
 </html>
